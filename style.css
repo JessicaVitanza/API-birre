@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-image: url("./assets/pattern.svg");
+background-size: cover;
+}
+
+.heading{
+text-align: center;
+font-size: xx-large;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 66px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+border-radius: 16px;
+background: #f5f5f5;
+-webkit-box-shadow: 8px 8px 33px #c9c9c9, -8px -8px 33px #ffffff;
+box-shadow: 8px 8px 33px #c9c9c9, -8px -8px 33px #ffffff;
+}
+
+.name {
+    font-size: larger;
+    text-transform: uppercase ;
+    margin-bottom: 16px;
+}
+
+.description {
+    margin: 16px;
+    font-size: medium;
+    text-align: left;
+}
+
+.pairings{
+    font-weight: bold;
+    text-transform: uppercase ;
+    margin: 16px;
+    font-size: medium;
+    text-align: left;
+}
+
+.list{
+    font-size: medium;
+    text-align: left;
+}
+
+.images {
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px)  {
+
+    #cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 75%;
+        box-shadow: 0 0 4px 3px darkgrey;
+        text-align: center;
+        padding: 16px;
+        margin-bottom: 36px;
+        border-radius: 16px;
+    }
+
+    .images {
+        height: 180px;
+    }
+}
