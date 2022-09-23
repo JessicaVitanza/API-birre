@@ -1,5 +1,5 @@
 
-// richiamo i dati dall'api
+// richiamo i dati dall'api specificando l'URL su cui effettuare la richiesta HTTP 
 fetch('https://api.punkapi.com/v2/beers')
 .then(resp => resp.json()).then(res => displayBeers(res));
 
